@@ -6,7 +6,7 @@
     font-family: 'Arial', sans-serif;
 }
 body {
-    overflow-x: hidden; /* Esto evita que haya scroll lateral en toda la página */
+    overflow-x: hidden; 
 }
 
 body {
@@ -14,29 +14,32 @@ body {
     color: #fff;
     line-height: 1.6;
     overflow-x: hidden;
-    /* margin-top: 80px; Este margen es necesario para no cubrir contenido */
+    
 }
 
 /* Encabezado */
+
 header {
     background-color: #121212;
     padding: 20px 0;
-    position: sticky;  /* Sticky para que se quede al hacer scroll */
-    top: 0;  /* Se pega a la parte superior */
-    width: 100%; /* Asegura que cubra todo el ancho */
-    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+    position: sticky;  
+    top: 0;  
+    width: 100%; 
+    z-index: 1000; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    animation: slideDown 0.6s ease-in-out forwards; /* Animación para el encabezado */
-    transform: translateY(-100%); /* Comienza fuera de la vista */
+    animation: slideDown 0.6s ease-in-out forwards; 
+    transform: translateY(-100%); 
 }
 
 /* Animación para que el encabezado aparezca deslizándose */
+
+
 @keyframes slideDown {
     0% {
-        transform: translateY(-100%); /* Comienza fuera de la vista (arriba) */
+        transform: translateY(-100%); 
     }
     100% {
-        transform: translateY(0); /* Se mueve hacia su posición original */
+        transform: translateY(0); 
     }
 }
 
@@ -86,6 +89,7 @@ nav {
 }
 
 /* Sección Hero */
+
 .hero {
     height: 80vh;
     display: flex;
@@ -94,7 +98,7 @@ nav {
     text-align: center;
     background: linear-gradient(135deg, #1c1c1c, #121212);
     position: relative;
-    padding-top: 80px; /* Evita que el header cubra el contenido */
+    padding-top: 80px; 
     overflow: hidden;
 }
 
@@ -147,10 +151,11 @@ nav {
 }
 
 /* Sección Sobre Mí */
+
 .section-about, .section-projects, .section-contact {
-    padding: 80px 20px; /* Compensa el header fijo */
+    padding: 80px 20px; 
     text-align: center;
-    margin-top: 60px; /* Asegura que la sección no quede oculta */
+    margin-top: 60px; 
 }
 
 /* Proyectos */
@@ -158,7 +163,7 @@ nav {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
-    flex-wrap: wrap; /* Hace las tarjetas responsivas */
+    flex-wrap: wrap; 
     gap: 20px;
 }
 
@@ -211,6 +216,7 @@ nav {
 }
 
 /* Contacto */
+
 .section-contact ul {
     list-style: none;
     padding: 0;
@@ -224,6 +230,7 @@ nav {
 }
 
 /* Pie de Página */
+
 footer {
     background-color: #121212;
     text-align: center;
@@ -233,7 +240,7 @@ footer {
 }
 /* Media Queries para hacerlo Responsive */
 
-/* En pantallas más grandes, mantener el tamaño normal */
+
 @media (min-width: 768px) {
     .cta-button {
         font-size: 18px;
@@ -244,7 +251,7 @@ footer {
     }
 }
 
-/* En pantallas más pequeñas (como tabletas) */
+
 @media (max-width: 768px) {
     .cta-button {
         font-size: 16px;
@@ -260,7 +267,7 @@ footer {
     }
 }
 
-/* En pantallas muy pequeñas (móviles) */
+
 @media (max-width: 480px) {
     
 
